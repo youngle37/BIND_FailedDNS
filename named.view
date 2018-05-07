@@ -1,0 +1,92 @@
+view "bsd1-bsd4" {
+	match-clients { bsd1-4; };
+
+	zone "." { type hint; file "/usr/local/etc/namedb/named.root"; };
+	zone "localhost"	{ type master; file "/usr/local/etc/namedb/master/localhost-forward.db"; };
+	zone "127.in-addr.arpa"	{ type master; file "/usr/local/etc/namedb/master/localhost-reverse.db"; };
+
+	zone "youngle.ml" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/youngle.ml.zone";
+	  allow-transfer { none; };
+	  allow-query { bsd1-4; };
+	};
+
+	zone "sub.youngle.ml" IN {
+	  type slave;
+	  file "/usr/local/etc/namedb/slave/bsd1-4.sub.youngle.ml.zone";
+	  masters { 159.65.137.110; };
+	  allow-query { bsd1-4; };
+	};
+
+	zone "sub.yskuo.tk" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/bsd1-4.sub.yskuo.tk.zone.signed";
+	  allow-transfer { kuo; };
+	};
+};
+
+view "linux1-linux4" {
+	match-clients { lin1-4; };
+
+	zone "." { type hint; file "/usr/local/etc/namedb/named.root"; };
+	zone "localhost"	{ type master; file "/usr/local/etc/namedb/master/localhost-forward.db"; };
+	zone "127.in-addr.arpa"	{ type master; file "/usr/local/etc/namedb/master/localhost-reverse.db"; };
+
+	zone "youngle.ml" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/youngle.ml.zone";
+	};
+
+	zone "sub.youngle.ml" IN {
+	  type slave;
+	  file "/usr/local/etc/namedb/slave/lin1-4.sub.youngle.ml.zone";
+	  masters { 159.65.137.110; };
+	};
+
+	zone "sub.yskuo.tk" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/lin1-4.sub.yskuo.tk.zone.signed";
+	  allow-transfer { Kuo; };
+	};
+};
+
+view "otherwise" {
+	match-clients { any; };
+
+	server 159.65.137.110 {
+	  provide-ixfr no;
+	  request-ixfr no;
+	};
+
+	server 140.113.235.131 {
+	  provide-ixfr no;
+	  request-ixfr no;
+	};
+
+	server 140.113.235.151 {
+	  provide-ixfr no;
+	  request-ixfr no;
+	};
+
+	zone "." { type hint; file "/usr/local/etc/namedb/named.root"; };
+	zone "localhost"	{ type master; file "/usr/local/etc/namedb/master/localhost-forward.db"; };
+	zone "127.in-addr.arpa"	{ type master; file "/usr/local/etc/namedb/master/localhost-reverse.db"; };
+
+	zone "youngle.ml" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/youngle.ml.zone";
+	};
+
+	zone "sub.youngle.ml" IN {
+	  type slave;
+	  file "/usr/local/etc/namedb/slave/sub.youngle.ml.zone";
+	  masters { 159.65.137.110; };
+	};
+
+	zone "sub.yskuo.tk" IN {
+	  type master;
+	  file "/usr/local/etc/namedb/master/sub.yskuo.tk.zone";
+	  allow-transfer { kuo; };
+	};
+};

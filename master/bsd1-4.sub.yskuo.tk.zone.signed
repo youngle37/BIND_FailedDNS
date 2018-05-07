@@ -1,0 +1,153 @@
+; File written on Wed Apr 25 12:07:18 2018
+; dnssec_signzone version 9.9.12
+sub.yskuo.tk.		60	IN SOA	Yns1.sub.yskuo.tk. Yinfo.sub.yskuo.tk. (
+					2018042600 ; serial
+					86400      ; refresh (1 day)
+					1800       ; retry (30 minutes)
+					604800     ; expire (1 week)
+					60         ; minimum (1 minute)
+					)
+			60	RRSIG	SOA 8 3 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					1Yw6o+TiaxGgVeaySuZZ97Zs2Q94OR0AvH0d
+					O++/797GvY0Jv83TojcRT4HGfXwYpw6aYExM
+					BLRviTX8V3X9h6UTQpWV4ArH9USKoY5HLXc5
+					0Sz+7o4fprEjtTfYF87qtGXA3QGxe376by9v
+					lEx1WOYGCleI7hizxiB3+1ezlDY= )
+			60	NS	ys.sub.yskuo.tk.
+			60	NS	ns1.sub.yskuo.tk.
+			60	RRSIG	NS 8 3 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					OjfvLOJ6/lrfS2j3KaByD3tA2W0lomQHsQut
+					1112Ng28yNXMBxKAOhvJfD8MhsNVMtF/a4tH
+					TaeMc3eDa02RX6+MghXW4QqWaLbnI9y4O47r
+					tECn05xUa80ufAjj/hS1YD+hh86Q+gXbgcU8
+					1FUVWzdjCDAPQ+R5W41HRZw43nQ= )
+			60	NSEC	demo.sub.yskuo.tk. NS SOA RRSIG NSEC DNSKEY
+			60	RRSIG	NSEC 8 3 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					s3Dhk7iLycI+uFpn+GQgYHVk/gOgVoGZhaUk
+					KnflUJQberAjeYhg/WPchex6iWmzhD8Gxn4T
+					PQvf1wHcplG21keYCuS9A2xDb5mH1/ZgnXB1
+					J+Kz+HlqLvxOu1pVkyQDMy+Wq++j6b6JPHXa
+					NSs7UgvvQL5Wy5xpsqsTrgSgJj4= )
+			60	DNSKEY	256 3 8 (
+					AwEAAddlFjuHUYZzfLxyEdiXEcIig4q7PhAM
+					zC2cfim2p73C39J/CjkpDf/7NHbY1c15i2YI
+					972RVEZ+aXo37/4KdNqzNZQ1E7kc12c17rgA
+					awAZEQdTGw4DOWj7NxiVxnagLNbbk7SWwirz
+					1GYKXy+IQUY6DDfEmpl74zzf8iKd0UG9
+					) ; ZSK; alg = RSASHA256 ; key id = 44124
+			60	DNSKEY	257 3 8 (
+					AwEAAbz8iJsbYyXMtmWh8CkStSRVN3vzA2UQ
+					QY7p1/ZaSPEBjAiTNvqSZixAlEekklsrW/FP
+					b2Osbx+kpGWRetEevY7aTa3mAY/ziukwpepY
+					vSQobrgcHx1gSgMVhttsv72bVOQqpRwWS/Q6
+					9axAqDuXBk4Y8g+PYoem0TKLiU66ET+C0PCi
+					eFTStISzenbE6XRraEI1kQ2pvNqaRRc23wqu
+					T44nYJ5kXCedsey02gQ2dYWE7d/VUH3629eK
+					VGO3gdbRulSNG9Uudk2Ja9AzZweWNv8lmRnq
+					ofcSRi2GIvxqAI0dJAVlGLnhG8XdKJ551EWb
+					KUZobGv2QwmNfg1CTGbqCes=
+					) ; KSK; alg = RSASHA256 ; key id = 52051
+			60	RRSIG	DNSKEY 8 3 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					09run5ilKMs65JroWJIQrt04DxqjzWAqYcrz
+					00wVCcJgB1LV3U/uPcDGTYjQm5wAAkGn5M12
+					4kMwOWNky1Y/4y0p1PeRMrQNu4z/DLDkljhH
+					LJ6jx4y2ld9DpzJvNN1fi41v7BxqhZpNQ7bP
+					e54B3oY7sLKH/AEsysG0Jv/Eg5I= )
+			60	RRSIG	DNSKEY 8 3 60 (
+					20180525110718 20180425110718 52051 sub.yskuo.tk.
+					GFF0ytBON/cNbozJRAqATee1iyUc2r8tnoyB
+					VQXcJJjt/17HKR5a+0I4wI5GcSCRimEhSThM
+					jJEKcNU2KMzGf2llp22PgbLpVyu4pIMYNsBy
+					loSLLCAZLe3CrtwwEFU2KthrHmMNNW6ctExN
+					hjOgcwRrtSMhdQv4hKWQ83fbtS+9GXHjL8uI
+					4IwAL8u9QKQg/GwalBJpvh0zgr0jv4F5fFug
+					b174aY4aTJZNf6p0/1wOKvonCi0OIEC//bGo
+					z5PIKaP+V5iKRorJETONohxpFajAMZRqO/0S
+					uE259rc9z+eA5E9vgM+aIFN82o6hBqZsnxua
+					H6MB/fbDekyFQSGHpg== )
+demo.sub.yskuo.tk.	60	IN CNAME ws.sub.yskuo.tk.
+			60	RRSIG	CNAME 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					bIQq6pcSrfUOsAfUON8aUMOqzTckdkXx4dgR
+					uGT2rSYEdfUUUyt5GxhNh6hvZjZHq+p3f8hi
+					PS4p6ICusCe58PKvjjtI+putUtUC+00DnyH4
+					uZOqreP0BsVDPjSCSVXSLj1zB8GrEg0v1lut
+					i6/jcxgNx+UHOyzyR6aFqn4mpUU= )
+			60	NSEC	freebsd-s-1vcpu-1gb-sgp1-01.sub.yskuo.tk. CNAME RRSIG NSEC
+			60	RRSIG	NSEC 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					Jt7t5yrH6Z01UW8iAeUpDd8dZNn5D2FhykRU
+					ohLgLzQvtvB6vCU/WD0AXraJx6Y8CZ21foJ8
+					vIYSL0N62/9vRu3aY9lXDHIih2Eq7+SLZA0S
+					MuiV88NvOH/pqEr4/paAASJ7b0Pgvdh2T8lK
+					mZTfd+Pz3eD2cCJbVa0h5yzJjV0= )
+freebsd-s-1vcpu-1gb-sgp1-01.sub.yskuo.tk. 60 IN	SSHFP 1 2 (
+					4F804482A1831EB6CBAC7ED74EC5C2A6D899
+					E982ACAB25D2ECEBA63A4A7F4183 )
+			60	RRSIG	SSHFP 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					c7J5FNu0GwoU8L8AyVeB207o2vKNal4Hg/Uv
+					lkmRV/rnybM67S3j66kxtfIGHZGZlELOnUqM
+					Z/vHzrvMhgGh5GL6o8BydgFP9XApP+LXOz3Z
+					snBMhMSMJaZbyTNOZuIAJLEUD+/IUemRCEF0
+					VtAUN8FtW9wcI8I2VoPlWT0Hucc= )
+			60	NSEC	ns1.sub.yskuo.tk. SSHFP RRSIG NSEC
+			60	RRSIG	NSEC 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					CWTq2XEJ53tMoEm1qzgsbZNjpBJxUfgkJi+Q
+					SKqvejAggG1PnTgwN8Aiz7XoWwExXDIDCZBr
+					ln/tO8YGPEKBzhHWwVkmo4mZgSHorV2/Tqw0
+					xSTiStIAs5wDlYk84gthItxlkDPzXDxIvGwD
+					Vk+Pj0a4PctWeQVJNojM1542TzU= )
+ns1.sub.yskuo.tk.	60	IN A	128.199.163.79
+			60	RRSIG	A 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					gNuLXpRFk/6F+QbVo+dh2THsLnDx7xDseLCp
+					VGeMf313NhCrOy3memdi5oA0bRKLorThDnBD
+					MzHD7dp+r/to2uLvFLal54wU/LgDobrnOrU7
+					Jdm1eGv1QRDfevGhKEl7x5bCIYYOnJWL4tj3
+					7iPzTTU55G8VQCjn6rqlV/Pox40= )
+			60	NSEC	ws.sub.yskuo.tk. A RRSIG NSEC
+			60	RRSIG	NSEC 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					b/SX30CDmLT1bb8VVbiejFlElK1+Bbv3DuEQ
+					bjk7/NNzBPSbQnG5xLCwmvV6Rh8xiGPQ05Uw
+					DfjNo2eczKWonrEQIC20WVQYMJaDWtAraKYb
+					XsMYHFAGwHBBIzXgchZYqUAt1sotPX1fQi+y
+					FYxaSIFs1h0YuzeVWmeIQbJUiFo= )
+ws.sub.yskuo.tk.	60	IN A	140.113.235.131
+			60	RRSIG	A 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					cTd51RopVYfQZFtv1EOnQfAU8JFryrQKOzud
+					S8sa/o8psDDjEevENUgZHasruYWOp37E+n9q
+					87RRITmEs+wumkoFgIYZEw2SKUTDAumyLtGK
+					dJmG+SWGYKpTBe8I2ANqUT3LGlljWRZ5c82L
+					8U8c3xkoGibC3qUVW38eeuwEudQ= )
+			60	NSEC	ys.sub.yskuo.tk. A RRSIG NSEC
+			60	RRSIG	NSEC 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					csMXr36SqI/QF0C0ztnmYmidKWTbjh5eCWOp
+					TrPrQ9ZTGlAlZSUv+3ISoQnMcI0H0NYY+l5Z
+					jcFOCnnSfXRe2EkrRQg4SU2kLXXpTgKjTr6+
+					H86s/UKX7nuCT/Pn/VnYeoGsIyrWrQcwxl1U
+					XHQQEUcv3FLDQpg3htKkARSQjjs= )
+ys.sub.yskuo.tk.	60	IN A	159.65.137.110
+			60	RRSIG	A 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					seJpnLsC5VoDlpF3Wn+bgTQMEjK+fMFeZOFw
+					1aEhjuQcKcWnfqIAixAk8JlNpLtgz3TFohJo
+					Dn3eMGvRzfXy2xLpXMCb4tUq5CAPYf3KbLk3
+					YskqoGPQelQ0VBHwBqTvEa201Rwfj+bzpR/r
+					pXAWLofvpkdQ6DEJ3tPo6jRM2D0= )
+			60	NSEC	sub.yskuo.tk. A RRSIG NSEC
+			60	RRSIG	NSEC 8 4 60 (
+					20180525110718 20180425110718 44124 sub.yskuo.tk.
+					NcJFJTHtqs9/rYbUlMkTa4fWpa+F2jyrheiR
+					BWlXBByN1Ir1oh9DMlnM9mPXBu8kH/w+WESn
+					8bObjJPW6uKM23P3f3BJ7yVpghZvab2FVG3t
+					wliuqZW/xadD15q0MDMJ47lXnCZDS065VOF3
+					Vl5G/E9SsXlvYkpsfBO45r5CcIU= )

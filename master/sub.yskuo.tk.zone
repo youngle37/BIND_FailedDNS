@@ -1,0 +1,18 @@
+$ORIGIN sub.yskuo.tk.
+$TTL 60
+@	IN	SOA	Yns1.sub.yskuo.tk.	Yinfo.sub.yskuo.tk. (
+				2018042624
+				1D
+				30M
+				1W
+				1M )
+@	IN	NS	ys
+@	IN	NS	ns1
+@	IN	A	128.199.163.79
+ns1	IN	A	128.199.163.79
+ys	IN	A	159.65.137.110
+demo	IN	CNAME	ws
+bsd4	IN	A	140.115.235.134
+
+freebsd-s-1vcpu-1gb-sgp1-01 IN SSHFP 1 2 4f804482a1831eb6cbac7ed74ec5c2a6d899e982acab25d2eceba63a4a7f4183
+

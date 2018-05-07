@@ -1,0 +1,16 @@
+$ORIGIN youngle.ml.
+$TTL 60
+@	IN	SOA	youngle.ml.	info.youngle.ml. (
+					2018042545
+					1D
+					30M
+					1W
+					1M )
+@	IN	NS	ns1
+@	IN	NS	ns2
+@	IN	A	128.199.163.79
+ns1	IN	A	128.199.163.79
+ns2	IN	A	128.199.163.79
+
+sub	IN	NS	ns1.sub.youngle.ml.
+ns1.sub	IN	A	159.65.137.110

@@ -1,0 +1,33 @@
+options {
+	directory	"/usr/local/etc/namedb/working";
+	pid-file	"/var/run/named/pid";
+	dump-file	"/var/dump/named_dump.db";
+	statistics-file	"/var/stats/named.stats";
+	recursion no;
+
+	version "0.0";
+
+// DNSSEC
+	dnssec-enable yes;
+        dnssec-validation yes;
+        //dnssec-lookaside auto;
+
+	disable-empty-zone "255.255.255.255.IN-ADDR.ARPA";
+	disable-empty-zone "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
+	disable-empty-zone "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
+};
+
+logging {
+	channel allLog {
+	  file "/var/log/named.log" versions 10 size 2M;
+	  print-time yes;
+	  print-severity yes;
+	  print-category yes;
+	};
+
+	category default { allLog; };
+	category general { allLog; };
+	category dnssec { allLog; };
+	category notify { allLog; };
+	category security { allLog; };
+};

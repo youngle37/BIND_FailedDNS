@@ -1,0 +1,7 @@
+$ORIGIN sub.yskuo.tk.
+$TTL 60
+
+$INCLUDE "/usr/local/etc/namedb/master/sub.yskuo.tk.zone"
+
+ws	IN	A	140.113.235.151
+
